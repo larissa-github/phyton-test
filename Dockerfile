@@ -7,8 +7,11 @@ COPY requirements.txt /opt/requirements.txt
 
 RUN pip install -r /opt/requirements.txt
 
-COPY hello1.py /opt/hello1.py
+COPY requirements.txt /opt/requirements.txt
+
+COPY run_tests.sh /opt/run_tests.sh
 
 EXPOSE 5000
 
 CMD ["python", "/opt/hello1.py"]
+
