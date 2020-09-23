@@ -1,5 +1,5 @@
 sut: 
     build: . 
-    command: run_tests.sh
+    command: pytest
     environment:
     - SOURCE_BRANCH
