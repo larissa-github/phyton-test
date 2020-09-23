@@ -11,11 +11,12 @@ COPY requirements.txt /opt/requirements.txt
 
 RUN true
 
-COPY run_tests.sh /opt/run_tests.sh
+# COPY run_tests.sh /opt/run_tests.sh
 
 EXPOSE 5000
 
 RUN true
 
-CMD ["python", "/opt/hello1.py"]
+# CMD ["python", "/opt/hello1.py"]
+RUN python hello1.py
 
