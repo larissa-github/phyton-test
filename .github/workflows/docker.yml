@@ -21,4 +21,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: docker build
         run: |
-			docker build . -t 01254879/dock_rep_hello2_py:latest
+			docker build -t 01254879/dock_rep_hello2_py:latest
